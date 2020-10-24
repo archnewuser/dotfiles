@@ -9,7 +9,7 @@ sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmapi
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 #export PATH="$PATH:$HOME/.local/bin"
-#export EDITOR="geany"
+export EDITOR="nvim"
 #export FILES="pcmanfm"
 #export TERMINAL="urxvt"
 export BROWSER="chromium"
@@ -20,14 +20,14 @@ xset s off # Disables screen saver
 
 #sh ~/.scripts/xsetloop.sh &
 #sh ~/.scripts/volume.sh &
-#while true; do
+while true; do
 #MEMORY=$(< /tmp/CurTime.tmp)
-#DATETIME=$(date '+%b %d %R ')
-#VOLUME=$( amixer sget Master | grep -e 'Front Left:' | \
-#    sed 's/[^\[]*\[\([0-9]\{1,3\}%\).*\(on\|off\).*/\2 \1/' | sed 's/off/Mute/' | sed 's/on /Vol /' )
-#xsetroot -name " ${VOLUME} | $DATETIME"
+DATETIME=$(date '+%a  %b %d  %R ')
+VOLUME=$( amixer sget Master | grep -e 'Front Left:' | \
+    sed 's/[^\[]*\[\([0-9]\{1,3\}%\).*\(on\|off\).*/\2 \1/' | sed 's/off/Mute/' | sed 's/on /Vol: /' )
+xsetroot -name " ${VOLUME} | $DATETIME"
 
-#done  &
+done  &
 
 #while true; do
 
@@ -36,7 +36,7 @@ xset s off # Disables screen saver
 #        sleep 10s
 #done &
 #picom &
-nm-applet &
+#nm-applet &
 ~/.fehbg &
 dwmblocks &
 
