@@ -17,7 +17,7 @@ alias \
 	ll="ls -l" \
     upgrade="sudo pacman -Syu"
 alias ls='ls --color=auto'
-alias gitu='git add . && git commit && git push'
+alias gitu='git add . && git commit -m "change" && git push'
 
 PS1="\[\033[01;36m\]\w\n\033[33m\]>\[\033[00;00m "
 #PS1="\[\033[01;36m\]\W\[\033[00m\]\> "
