@@ -1,4 +1,5 @@
 #
+# 
 # ~/.bashrc
 #
 
@@ -11,11 +12,12 @@ alias \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
-	v="$EDITOR" \
+	v="nvim" \
 	p="sudo pacman" \
 	ll="ls -l" \
     upgrade="sudo pacman -Syu"
 alias ls='ls --color=auto'
+alias gitu='git add . && git commit && git push'
 
 PS1="\[\033[01;36m\]\w\n\033[33m\]>\[\033[00;00m "
 #PS1="\[\033[01;36m\]\W\[\033[00m\]\> "
@@ -27,3 +29,4 @@ PS1="\[\033[01;36m\]\w\n\033[33m\]>\[\033[00;00m "
 #PS1="\[\033[01;37m\]\W\[\[\033[00;32m\]\> "
 #PS1="\[\033[01;36m\]\W\[\[\033[00;37m\]\> "
 #PS1='\[\033[00;35m\]\u\[\033[00m\]@\[\033[00;35m\]\H\[\033[00m\]:\[\033[00;33m\]\W\[\033[00m\] \$\[\033[00;34m '
+
