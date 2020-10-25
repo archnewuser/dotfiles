@@ -1,11 +1,21 @@
 
 
 !! Transparency (0-1):
-*.alpha: 0.8
+*.alpha: 1
 
 !! Set a default font and font size as below:
 *.font: monospace:size=10
 URxvt*font:xft:DejaVu Sans Mono:autohint=true:size=12
+rofi.font: InconsolataForPowerline Nerd Font 11
+
+Xft.dpi:       96
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.autohint:  false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
 URxvt.depth:                      32
 URxvt.background:                 [100]#222D31
 !URxvt.background:                [40]#000000
@@ -144,24 +154,24 @@ URxvt*saveLines:                  5000
 /* *.background:   #000000 */
 
 /* ! Dracula Xresources palette */
- *.foreground: #F8F8F2 
- *.background: #282A36 
- *.color0:     #000000 
- *.color8:     #4D4D4D 
- *.color1:     #FF5555 
- *.color9:     #FF6E67 
- *.color2:     #50FA7B 
- *.color10:    #5AF78E 
- *.color3:     #F1FA8C 
- *.color11:    #F4F99D 
- *.color4:     #BD93F9 
- *.color12:    #CAA9FA 
- *.color5:     #FF79C6 
- *.color13:    #FF92D0 
- *.color6:     #8BE9FD 
- *.color14:    #9AEDFE 
- *.color7:     #BFBFBF 
- *.color15:    #E6E6E6 
+/* *.foreground: #F8F8F2 */ 
+/* *.background: #282A36 */ 
+/* *.color0:     #000000 */ 
+/* *.color8:     #4D4D4D */ 
+/* *.color1:     #FF5555 */ 
+/* *.color9:     #FF6E67 */ 
+/* *.color2:     #50FA7B */ 
+/* *.color10:    #5AF78E */ 
+/* *.color3:     #F1FA8C */ 
+/* *.color11:    #F4F99D */ 
+/* *.color4:     #BD93F9 */ 
+/* *.color12:    #CAA9FA */ 
+/* *.color5:     #FF79C6 */ 
+/* *.color13:    #FF92D0 */ 
+/* *.color6:     #8BE9FD */ 
+/* *.color14:    #9AEDFE */ 
+/* *.color7:     #BFBFBF */ 
+/* *.color15:    #E6E6E6 */ 
 
 /* *.background: .color0 */
 /* *.color256: 0#1d2021 */
@@ -222,5 +232,6 @@ URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-k: command:\033]720;1\007
 URxvt.keysym.M-j: command:\033]721;1\007
 URxvt*depth: 32
+
 
 
