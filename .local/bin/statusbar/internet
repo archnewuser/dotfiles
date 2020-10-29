@@ -1,0 +1,17 @@
+#!/bin/sh
+
+
+
+if grep -qw up /sys/class/net/e*/operstate
+then icon=' '
+elif grep -qw up /sys/class/net/w*/operstate
+then  icon=' '
+else icon=' '
+fi
+printf "%s%s\n" "$icon"
+
+
+
+
+
+
