@@ -32,7 +32,7 @@ bspc config presel_feedback_color	"#5e81ac"
 bspc rule -a Lxappearance state=floating center=true
 bspc rule -a Galculator state=floating center=true
 bspc rule -a Pavucontrol state=floating center=true
-bspc rule -a St -e Htop state=floating center=true
+bspc rule -a St -e top state=floating center=true
 bspc rule -a BleachBit state=floating center=true
 bspc rule -a URxvt:urxvt_keys_help state=floating
 
