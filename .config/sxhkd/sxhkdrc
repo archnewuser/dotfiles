@@ -8,7 +8,7 @@ super + shift + Return
 
   
 # Rotate tree
-super + shift + {d,a}
+super + shift + {a,s}
     bspc node @/ -C {forward,backward}
 
 # Send to other monitor
